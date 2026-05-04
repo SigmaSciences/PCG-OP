@@ -2,7 +2,7 @@
 
 Pure-Delphi port of [pcg-cpp](https://github.com/imneme/pcg-cpp), Melissa
 O'Neill's reference implementation of the PCG family of random number
-generators.
+generators using Claude Code and Opus 4.6. This port was 100% written by Opus 4.6.
 
 The port produces **byte-exact** output for every PCG family member that
 upstream pcg-cpp ships an expected fixture for: 40 conformance tests pass

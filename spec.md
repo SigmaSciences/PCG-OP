@@ -10,9 +10,7 @@ dependencies. Tests run as plain console executables built through the
 `delphi-msbuild` skill so their output can be byte-compared against the C++
 project's existing `expected/*.out` files.
 
-The reference repo lives at `H:\Source Projects\pcg-cpp` (read-only). All
-output of the port - units, project files, tests, scripts, docs - is committed
-to `H:\AI_Code_Projects\pcg-op`.
+The port was created using Claude Code with Opus 4.6.
 
 ### 1.1 Goals
 
@@ -47,7 +45,7 @@ to `H:\AI_Code_Projects\pcg-op`.
 ## 2. Repository Layout (output)
 
 ```
-H:\AI_Code_Projects\pcg-op\
+<root-folder>\pcg-op\
   spec.md                     <-- this file
   README.md
   LICENSE-APACHE.txt
@@ -477,7 +475,7 @@ the file ends with `\n` not `\n\n`.
 ### 5.6 Test data
 
 `test-data\expected\` is a verbatim copy of
-`H:\Source Projects\pcg-cpp\test-high\expected\`. We copy it once and commit.
+`<root-folder>\pcg-cpp\test-high\expected\`. We copy it once and commit.
 We never ask the C++ project to regenerate it - the conformance contract is
 the file as published.
 
@@ -505,7 +503,7 @@ introduces. No milestone is "done" until the diff against
 * Add `spec.md` (this file), `README.md`, license files, `.gitignore`
   (excludes `__history`, `*.dcu`, `*.identcache`, `Win32\`, `Win64\`,
   `*.codex.msbuild.dproj`, `test-data\actual\`).
-* Copy `H:\Source Projects\pcg-cpp\test-high\expected\*.out` to
+* Copy `<root-folder>\pcg-cpp\test-high\expected\*.out` to
   `test-data\expected\`.
 * Add empty `scripts\build-all.ps1` and `scripts\run-tests.ps1` skeletons.
 
