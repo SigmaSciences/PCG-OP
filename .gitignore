@@ -1,0 +1,25 @@
+# Delphi / IDE artefacts
+__history/
+__recovery/
+*.dcu
+*.identcache
+*.local
+*.tvsconfig
+*.dsk
+*.~*
+
+# Build outputs (per-project)
+Win32/
+Win64/
+Debug/
+Release/
+
+# delphi-msbuild wrapper (skill creates these for bare .dpr)
+*.codex.msbuild.dproj
+
+# Test runtime artefacts
+test-data/actual/
+
+# OS noise
+Thumbs.db
+.DS_Store
